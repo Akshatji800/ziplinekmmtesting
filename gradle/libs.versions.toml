@@ -1,0 +1,34 @@
+[versions]
+agp = "8.2.0"
+kotlin = "1.9.20"
+compose = "1.5.4"
+compose-compiler = "1.5.4"
+compose-material3 = "1.1.2"
+androidx-activityCompose = "1.8.0"
+zipline = "1.7.0"
+okHttp = "4.12.0"
+okio = "3.6.0"
+kotlinx-serialization = "1.7.10"
+
+[libraries]
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
+compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
+okHttp-core = { module = "com.squareup.okhttp3:okhttp", version.ref = "okHttp" }
+okHttp-mockWebServer = { module = "com.squareup.okhttp3:mockwebserver", version.ref = "okHttp" }
+okio-core = { module = "com.squareup.okio:okio", version.ref = "okio" }
+okio-fakeFileSystem = { module = "com.squareup.okio:okio-fakefilesystem", version.ref = "okio" }
+clikt = { module = "com.github.ajalt.clikt:clikt", version = "4.2.1" }
+
+[plugins]
+kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlinx-serialization" }
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinCocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
+zipline = { id = "app.cash.zipline", version.ref = "zipline" }

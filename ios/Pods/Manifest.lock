@@ -1,0 +1,16 @@
+PODS:
+  - presenters (1.0)
+
+DEPENDENCIES:
+  - presenters (from `../presenters`)
+
+EXTERNAL SOURCES:
+  presenters:
+    :path: "../presenters"
+
+SPEC CHECKSUMS:
+  presenters: 470d372bbdca16f699e03231f5a4e7aada0002ca
+
+PODFILE CHECKSUM: 149fb7348d81a8c4cca879b7758121d20019ad55
+
+COCOAPODS: 1.14.3
